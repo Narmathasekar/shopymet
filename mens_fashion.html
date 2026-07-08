@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Men's Fashion - Shopmet</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+        <link rel="stylesheet" href="stl.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <style>
+          .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 1.5rem;
+          }
+          .card-container .card img {
+            height: 250px;
+            object-fit: cover;
+          }
+       </style>
+    </head>
+    <body class="body-mens">
+        <div class="toptop"> 
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="nm.html" style="display: inline-flex; align-items: center;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16" style="margin-right: 0.3rem;">
+        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.74 11.5H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.105 4.757l-.858 4.31L12.44 8.5l.722-3.61zM5 12.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m8 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-4 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/> </svg>
+      <strong>ShopMet</strong>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 topbar">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" style="padding-top: 0.25rem; padding-bottom: 0.25rem;"><button id="location-btn" class="btn btn-outline-success btn-sm" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentcolor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/> </svg> Location</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="signin-btn" style="padding-top: 0.625rem; padding-bottom: 0.625rem;">Signin</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="padding-top: 0.625rem; padding-bottom: 0.625rem;">
+            EN
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Tamil</a></li>
+             <li><a class="dropdown-item" href="#">English</a></li>
+            <li><a class="dropdown-item" href="#">hindi</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="myorder-btn" style="padding-top: 0.625rem; padding-bottom: 0.625rem;">MYORDER</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" id="search-input" type="search" placeholder="Search brand or product..." aria-label="search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+        </div>
+        
+<div class="wholeback">
+ <button class="btn btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+</svg>ALL</button>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Hello, Shopper</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <h5 class="mb-3">My Collections</h5>
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+          <h6 class="mb-1">Summer Favorites</h6>
+          <small class="text-muted">
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-half text-warning"></i>
+          </small>
+        </div>
+        <p class="mb-1">My top picks for the summer season.</p>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+          <h6 class="mb-1">Workout Essentials</h6>
+          <small class="text-muted">
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star text-warning"></i>
+          </small>
+        </div>
+        <p class="mb-1">Must-haves for the gym.</p>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <h6 class="mb-1">Evening Wear</h6>
+        <p class="mb-1">Elegant outfits for special nights.</p>
+      </a>
+    </div>
+
+    <h5 class="mb-3 mt-4">Shop by Categories</h5>
+    <div class="accordion accordion-flush" id="categoriesAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="offcanvasHeadingFashion">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#offcanvasCollapseFashion" aria-expanded="false" aria-controls="offcanvasCollapseFashion">
+            Fashion
+          </button>
+        </h2>
+        <div id="offcanvasCollapseFashion" class="accordion-collapse collapse" aria-labelledby="offcanvasHeadingFashion" data-bs-parent="#categoriesAccordion">
+          <div class="accordion-body">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><a href="womens_fashion.html" class="text-decoration-none text-dark">Women's Fashion</a></li>
+              <li class="list-group-item"><a href="mens_fashion.html" class="text-decoration-none text-dark">Men's Fashion</a></li>
+              <li class="list-group-item"><a href="kids_wear.html" class="text-decoration-none text-dark">Kids Wear</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="offcanvasHeadingAccessories">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#offcanvasCollapseAccessories" aria-expanded="false" aria-controls="offcanvasCollapseAccessories">
+            Accessories & More
+          </button>
+        </h2>
+        <div id="offcanvasCollapseAccessories" class="accordion-collapse collapse" aria-labelledby="offcanvasHeadingAccessories" data-bs-parent="#categoriesAccordion">
+          <div class="accordion-body">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><a href="watches.html" class="text-decoration-none text-dark">Watches</a></li>
+              <li class="list-group-item"><a href="cosmetics.html" class="text-decoration-none text-dark">Cosmetics</a></li>
+              <li class="list-group-item"><a href="footwear.html" class="text-decoration-none text-dark">Footwear</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="navtab">
+  <ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link" href="nm.html">HOME</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" href="womens_fashion.html">Women's Fashion</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">men's Fashion</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" href="kids_wear.html">Kids wear</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" href="watches.html">Watches</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" href="cosmetics.html">cosmetics</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="footwear.html">footwear</a>
+  </li>
+</ul>
+ </div>
+</div>
+
+<div class="container mt-4">
+    <h1 class="mb-4">Men's Fashion</h1>
+    <p>Explore our latest collection of men's clothing, footwear, and accessories.</p>
+    
+    <div class="card-container mt-4">
+        <div class="card" style="width: 18rem;">
+          <img src="C:\Users\Snarm\OneDrive\Desktop\myshop\index.html\s3.jpg" class="card-img-top" alt="Sneakers">
+          <div class="card-body">
+            <h5 class="card-title"><b>NIKE</b></h5>
+            <div class="mb-2 rating-stars">
+              <i class="bi bi-star text-warning" data-value="1"></i>
+              <i class="bi bi-star text-warning" data-value="2"></i>
+              <i class="bi bi-star text-warning" data-value="3"></i>
+              <i class="bi bi-star text-warning" data-value="4"></i>
+              <i class="bi bi-star text-warning" data-value="5"></i>
+            </div>
+            <p class="card-text">Men's sneakers designed for daily runs, gym sessions, and casual outings.</p>
+            <a href="#" class="btn btn-primary">View more</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="C:\Users\Snarm\OneDrive\Desktop\myshop\index.html\n4.avif" class="card-img-top" alt="Watch">
+          <div class="card-body">
+            <h5 class="card-title"><b>TITAN</b></h5>
+            <div class="mb-2 rating-stars">
+              <i class="bi bi-star text-warning" data-value="1"></i>
+              <i class="bi bi-star text-warning" data-value="2"></i>
+              <i class="bi bi-star text-warning" data-value="3"></i>
+              <i class="bi bi-star text-warning" data-value="4"></i>
+              <i class="bi bi-star text-warning" data-value="5"></i>
+            </div>
+            <p class="card-text">Premium analog watch designed to symbolize class and elegance.</p>
+            <a href="#" class="btn btn-primary">View more</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="C:\Users\Snarm\OneDrive\Desktop\myshop\index.html\a1.jpg" class="card-img-top" alt="Shirt">
+          <div class="card-body">
+            <h5 class="card-title"><b>URBAN STYLE</b></h5>
+            <div class="mb-2 rating-stars">
+              <i class="bi bi-star text-warning" data-value="1"></i>
+              <i class="bi bi-star text-warning" data-value="2"></i>
+              <i class="bi bi-star text-warning" data-value="3"></i>
+              <i class="bi bi-star text-warning" data-value="4"></i>
+              <i class="bi bi-star text-warning" data-value="5"></i>
+            </div>
+            <p class="card-text">Classic casual shirt perfect for office wear or evening gatherings.</p>
+            <a href="#" class="btn btn-primary">View more</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="C:\Users\Snarm\OneDrive\Desktop\myshop\index.html\a2.jpg" class="card-img-top" alt="Jacket">
+          <div class="card-body">
+            <h5 class="card-title"><b>WINTER WEAR</b></h5>
+            <div class="mb-2 rating-stars">
+              <i class="bi bi-star text-warning" data-value="1"></i>
+              <i class="bi bi-star text-warning" data-value="2"></i>
+              <i class="bi bi-star text-warning" data-value="3"></i>
+              <i class="bi bi-star text-warning" data-value="4"></i>
+              <i class="bi bi-star text-warning" data-value="5"></i>
+            </div>
+            <p class="card-text">Stylish and warm jacket to keep you comfortable during the cold season.</p>
+            <a href="#" class="btn btn-primary">View more</a>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer Section -->
+<footer class="bg-dark text-white pt-5 pb-4 mt-5">
+  <div class="container text-center text-md-start">
+    <div class="row text-center text-md-start">
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">ShopMet</h5>
+        <p>Your favorite destination for fashion and lifestyle. Discover the best trends with us.</p>
+      </div>
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Conditions</h5>
+        <p><a href="#" class="text-white" style="text-decoration: none;">Terms of Use</a></p>
+        <p><a href="#" class="text-white" style="text-decoration: none;">Privacy Policy</a></p>
+      </div>
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Help & Service</h5>
+        <p><a href="#" class="text-white" style="text-decoration: none;">Customer Care</a></p>
+        <p><a href="#" class="text-white" style="text-decoration: none;">Track Order</a></p>
+      </div>
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
+        <p>New Delhi, India</p>
+        <p>support@shopmet.com</p>
+        <p>+91 98765 43210</p>
+      </div>
+    </div>
+    <hr class="mb-4">
+    <div class="row align-items-center">
+      <div class="col-md-7 col-lg-8">
+        <p> Copyright ©2024 All rights reserved by:
+          <a href="#" style="text-decoration: none;">
+            <strong class="text-warning">ShopMet</strong>
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Signin Modal -->
+<div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="signinModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signinModalLabel">Sign In with Phone Number</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Phone Number Step -->
+        <div id="phone-step">
+          <div class="mb-3">
+            <label for="phoneNumberInput" class="form-label">Enter your 10-digit phone number</label>
+            <input type="tel" class="form-control" id="phoneNumberInput" placeholder="e.g., 9876543210" maxlength="10">
+            <div class="invalid-feedback">Please enter a valid 10-digit phone number.</div>
+          </div>
+          <button type="button" class="btn btn-primary w-100" id="send-otp-btn">Send OTP</button>
+        </div>
+        <!-- OTP Step -->
+        <div id="otp-step" style="display: none;">
+          <p>An OTP has been sent to <strong id="display-phone-number"></strong>. (For this demo, the OTP is <strong>1234</strong>)</p>
+          <div class="mb-3">
+            <label for="otpInput" class="form-label">Enter the 4-digit OTP</label>
+            <input type="text" class="form-control" id="otpInput" placeholder="----" maxlength="4">
+            <div class="invalid-feedback">Invalid OTP. Please try again.</div>
+          </div>
+          <button type="button" class="btn btn-success w-100" id="verify-otp-btn">Verify & Sign In</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Orders Modal -->
+<div class="modal fade" id="ordersModal" tabindex="-1" aria-labelledby="ordersModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ordersModalLabel">My Orders</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Order #12345</h5>
+              <small class="text-success">Delivered</small>
+            </div>
+            <p class="mb-1">Men's Sneakers (Nike)</p>
+            <small>Ordered on: Jan 15, 2024</small>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Order #67890</h5>
+              <small class="text-primary">Shipped</small>
+            </div>
+            <p class="mb-1">Women's Floral Dress</p>
+            <small>Ordered on: Feb 20, 2024</small>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Order #11223</h5>
+              <small class="text-warning">Processing</small>
+            </div>
+            <p class="mb-1">Titan Couple Watch</p>
+            <small>Ordered on: Today</small>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>   
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const ratingContainers = document.querySelectorAll('.rating-stars');
+
+    ratingContainers.forEach(container => {
+      const stars = container.querySelectorAll('i');
+
+      // Function to reset stars to the currently saved rating
+      const resetStars = () => {
+        const currentRating = parseInt(container.getAttribute('data-rating') || '0');
+        stars.forEach((star, index) => {
+          if (index < currentRating) {
+            star.classList.remove('bi-star');
+            star.classList.add('bi-star-fill');
+          } else {
+            star.classList.remove('bi-star-fill');
+            star.classList.add('bi-star');
+          }
+        });
+      };
+
+      stars.forEach(star => {
+        star.style.cursor = 'pointer';
+
+        star.addEventListener('mouseover', () => {
+          const ratingValue = parseInt(star.getAttribute('data-value'));
+          // Temporarily fill stars on hover
+          stars.forEach((s, index) => {
+            if (index < ratingValue) {
+              s.classList.remove('bi-star');
+              s.classList.add('bi-star-fill');
+            } else {
+              s.classList.remove('bi-star-fill');
+              s.classList.add('bi-star');
+            }
+          });
+        });
+
+        star.addEventListener('click', () => {
+          const ratingValue = parseInt(star.getAttribute('data-value'));
+          // Set the rating permanently on click (for this session)
+          container.setAttribute('data-rating', ratingValue);
+          alert(`Thank you for rating this ${ratingValue} out of 5!`);
+        });
+      });
+
+      // When mouse leaves the container, reset to the saved rating
+      container.addEventListener('mouseleave', () => {
+        resetStars();
+      });
+
+      resetStars(); // Set initial state (0 stars)
+    });
+  });
+
+  function updateLocation(manualClick = false) {
+    const btn = document.getElementById('location-btn');
+    const iconSvg = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentcolor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/> </svg>';
+    
+    if (navigator.geolocation) {
+      if (manualClick) btn.innerHTML = iconSvg + " Locating...";
+      navigator.geolocation.getCurrentPosition((position) => {
+        const { latitude, longitude } = position.coords;
+        fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`)
+          .then(response => response.json())
+          .then(data => {
+            // Prioritize locality to show specific area
+            const area = data.locality || data.city || "India";
+            const state = data.principalSubdivision || "";
+            btn.innerHTML = iconSvg + " " + area;
+            if (manualClick) alert(`Current Area: ${area}\nState: ${state}\nCountry: ${data.countryName}`);
+          })
+          .catch(() => {
+            btn.innerHTML = iconSvg + " Location Error";
+          });
+      }, (error) => {
+        console.error(error);
+        if (manualClick) {
+          btn.innerHTML = iconSvg + " Permission Denied";
+          alert("Please allow location access to set your current location.");
+        }
+      });
+    } else if (manualClick) {
+      alert("Geolocation is not supported by this browser.");
+    }
+  }
+
+  document.getElementById('location-btn').addEventListener('click', function(event) {
+    event.preventDefault(); 
+    event.stopPropagation();
+    updateLocation(true);
+  });
+
+  // Automatically check location on page load
+  window.addEventListener('load', function() {
+    updateLocation(false);
+  });
+
+  // --- Signin Modal Logic ---
+  const signinBtn = document.getElementById('signin-btn');
+  const signinModalEl = document.getElementById('signinModal');
+  const signinModal = new bootstrap.Modal(signinModalEl);
+  
+  const phoneStep = document.getElementById('phone-step');
+  const otpStep = document.getElementById('otp-step');
+  const phoneNumberInput = document.getElementById('phoneNumberInput');
+  const sendOtpBtn = document.getElementById('send-otp-btn');
+  const otpInput = document.getElementById('otpInput');
+  const verifyOtpBtn = document.getElementById('verify-otp-btn');
+  const displayPhoneNumber = document.getElementById('display-phone-number');
+
+  // Main Signin button in navbar
+  signinBtn.addEventListener('click', function(event) {
+    event.preventDefault();
+    if (this.innerText.trim() === "Signin") {
+        // Reset modal to initial state before showing
+        phoneStep.style.display = 'block';
+        otpStep.style.display = 'none';
+        phoneNumberInput.value = '';
+        otpInput.value = '';
+        phoneNumberInput.classList.remove('is-invalid');
+        otpInput.classList.remove('is-invalid');
+        signinModal.show();
+    } else {
+        if (confirm("Do you want to sign out?")) {
+            this.innerText = "Signin";
+        }
+    }
+  });
+
+  // "Send OTP" button inside modal
+  sendOtpBtn.addEventListener('click', function() {
+    if (/^\d{10}$/.test(phoneNumberInput.value)) {
+        phoneNumberInput.classList.remove('is-invalid');
+        displayPhoneNumber.innerText = phoneNumberInput.value;
+        phoneStep.style.display = 'none';
+        otpStep.style.display = 'block';
+    } else {
+        phoneNumberInput.classList.add('is-invalid');
+    }
+  });
+
+  // "Verify OTP" button inside modal
+  verifyOtpBtn.addEventListener('click', function() {
+    const fakeOtp = "1234";
+    if (otpInput.value === fakeOtp) {
+        otpInput.classList.remove('is-invalid');
+        signinModal.hide();
+        signinBtn.innerText = "Hello, " + phoneNumberInput.value;
+        alert("Sign-in successful! Welcome.");
+    } else {
+        otpInput.classList.add('is-invalid');
+    }
+  });
+
+  // --- My Orders Logic ---
+  const myOrderBtn = document.getElementById('myorder-btn');
+  const ordersModalEl = document.getElementById('ordersModal');
+  const ordersModal = new bootstrap.Modal(ordersModalEl);
+
+  myOrderBtn.addEventListener('click', function(event) {
+    event.preventDefault();
+    ordersModal.show();
+  });
+
+  // --- Search Functionality ---
+  const searchInput = document.getElementById('search-input');
+  const searchForm = document.querySelector('form[role="search"]');
+
+  if (searchForm) searchForm.addEventListener('submit', (e) => e.preventDefault());
+
+  if (searchInput) {
+    searchInput.addEventListener('input', function() {
+      const query = this.value.toLowerCase().trim();
+      const cards = document.querySelectorAll('.card-container .card, .horizontal-scroll-container .card');
+
+      cards.forEach(card => {
+        const title = card.querySelector('.card-title')?.innerText.toLowerCase() || "";
+        const text = card.querySelector('.card-text')?.innerText.toLowerCase() || "";
+        const alt = card.querySelector('img')?.getAttribute('alt')?.toLowerCase() || "";
+        card.style.display = (title.includes(query) || text.includes(query) || alt.includes(query)) ? 'block' : 'none';
+      });
+    });
+  }
+</script>
+</body>
+</html>
